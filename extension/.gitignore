@@ -1,0 +1,5 @@
+# No build artifacts for now, but future-proofing
+node_modules/
+dist/
+build/
+.DS_Store
