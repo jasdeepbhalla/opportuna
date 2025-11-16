@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Opportuna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Opportuna</h1>
+    <p class="small">
+      Scan this page and draft a tailored outreach email to conference / track chairs.
+    </p>
+
+    <div id="context">
+      <div><span class="badge" id="conferenceTitleBadge">No page scanned yet</span></div>
+      <div class="small" id="conferenceMeta"></div>
+    </div>
+
+    <hr />
+
+    <label for="opportunityType">Opportunity type</label>
+    <select id="opportunityType">
+      <option value="reviewer">Program Committee Reviewer</option>
+      <option value="journal-reviewer">Journal Reviewer</option>
+      <option value="judge">Hackathon / Competition Judge</option>
+      <option value="speaker">Conference Speaker / Panelist</option>
+      <option value="other">Other opportunity</option>
+    </select>
+
+    <label for="tone">Tone</label>
+    <select id="tone">
+      <option value="professional">Professional and concise</option>
+      <option value="friendly">Friendly but professional</option>
+      <option value="formal">Formal</option>
+    </select>
+
+    <label for="customNotes">Custom notes to include (optional)</label>
+    <textarea id="customNotes" placeholder="E.g., emphasize AI agents security expertise, prior PC roles, etc."></textarea>
+
+    <div class="actions">
+      <button id="scanAndGenerate" class="primary">Scan & Generate Email</button>
+      <button id="openOptions" class="secondary">Settings</button>
+    </div>
+
+    <hr />
+
+    <h2>Draft Email</h2>
+    <p class="small">
+      Review and edit before sending. Opportuna will not auto-send emails (v1).
+    </p>
+    <label for="toField">To</label>
+    <input id="toField" type="text" placeholder="chair1@example.com, chair2@example.org" />
+
+    <label for="subjectField">Subject</label>
+    <input id="subjectField" type="text" />
+
+    <label for="bodyField">Body</label>
+    <textarea id="bodyField" class="preformatted"></textarea>
+
+    <div class="actions">
+      <button id="openGmail" class="primary">Open in Gmail</button>
+      <button id="copyEmail" class="secondary">Copy to clipboard</button>
+    </div>
+
+    <p id="status" class="small"></p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

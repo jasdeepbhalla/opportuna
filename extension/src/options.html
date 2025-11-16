@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Opportuna – Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Opportuna Settings</h1>
+    <p class="small">
+      Configure your personal profile; Opportuna will use this when drafting emails.
+    </p>
+
+    <label for="fullName">Full name</label>
+    <input id="fullName" type="text" placeholder="Jasdeep Singh Bhalla" />
+
+    <label for="title">Current role / title</label>
+    <input id="title" type="text" placeholder="Senior Software Engineer, Cloud Governance" />
+
+    <label for="affiliation">Affiliation(s)</label>
+    <input id="affiliation" type="text" placeholder="GoDaddy Inc.; AI Agents Security Research" />
+
+    <label for="shortBio">Short bio (2–4 lines)</label>
+    <textarea id="shortBio" placeholder="Your concise reviewer profile..."></textarea>
+
+    <label for="keywords">Expertise keywords (comma-separated)</label>
+    <input id="keywords" type="text" placeholder="cloud, AWS, LLMs, security, governance, DevOps" />
+
+    <label for="email">Your email (used in signature)</label>
+    <input id="email" type="email" placeholder="you@example.com" />
+
+    <label for="backendUrl">Backend server URL</label>
+    <input
+      id="backendUrl"
+      type="text"
+      placeholder="http://localhost:8000"
+    />
+
+    <div class="actions">
+      <button id="save" class="primary">Save</button>
+      <button id="reset" class="secondary">Reset</button>
+    </div>
+
+    <p id="status" class="small"></p>
+
+    <script src="options.js"></script>
+  </body>
+</html>
