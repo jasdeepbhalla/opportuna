@@ -48,7 +48,7 @@ async function getActiveTab() {
       }
     }
   
-    meta.textContent = parts.join(" | ");
+    meta.textContent = parts.join("\n");
   }
   
   async function loadProfile() {

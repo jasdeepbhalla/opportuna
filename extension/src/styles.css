@@ -65,6 +65,10 @@ body {
     color: #6b7280;
   }
   
+  #conferenceMeta {
+    white-space: pre-line;
+  }
+  
   .badge {
     display: inline-block;
     padding: 2px 6px;
